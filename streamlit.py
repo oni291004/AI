@@ -35,7 +35,7 @@ def predict_naive_bayes(stats, X_input):
 st.title("Naive Bayes Fraud Detection")
 st.write("Masukkan nilai untuk setiap fitur untuk memprediksi apakah data adalah penipuan atau bukan.")
 
-path = 'C:\\Users\\otnie\\Latihan\\.vscode\\creditcard.csv\\creditcard.csv'
+path = 'creditcard.csv'
 df = pd.read_csv(path)
 
 X = df.drop(columns=["Class"]).values
